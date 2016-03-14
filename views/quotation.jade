@@ -4,8 +4,9 @@ block content
 	h3.title-header Quotation
 	p You can  <a href="../img/pdf/form.pdf" target="_blank"><i class="auto fa fa-cloud-download"></i> Download the Form.</a>
 	.row
-		form.col.s12(name="quotation", netlify,  netlify-honeypot="bot-field")
+		form.col.s12.quotation-form(name="quotation", netlify,  netlify-honeypot="bot-field")
 			input(type="hidden", name="subject", value="Quotation Form")
+			label(name="please check your needs", value="contact information" , class="label_name") Contact Information
 			.row
 				.input-field.col.s12
 					input#company_name.validate(type='text', name="company name", required)
@@ -37,68 +38,70 @@ block content
 					label(for='email') Email
 			br
 			label(name="please check your needs", value="please check your needs" , class="label_name") Please Check Your Needs
-			.row#situation
-				.col.s12
-					label(name="situation", value="situation", class="legend") Situation
-				.input-field.col.s12.m6
-					input#new_fence.filled-in(type='checkbox', name="new fence to be installed")
-					label(for='new_fence') New fence to be installed
-				.input-field.col.s12.m6
-					input#repair.filled-in(type='checkbox', name="repair")
-					label(for='repair') Repair
-			.row#application
-				.col.s12
-					label(name="application", value="application", class="legend",) Application
+			fieldset
+				legend Situation
+				.row#situation
 
-				.input-field.col.s12.m6.l3
-					input#industrial.filled-in(type='checkbox', name="industrial")
-					label(for='industrial') Industrial
-				.input-field.col.s12.m6.l3
-					input#commercial.filled-in(type='checkbox', name="commercial")
-					label(for='commercial') Commercial
-				.input-field.col.s12.m6.l3
-					input#construction.filled-in(type='checkbox', name="construction")
-					label(for='construction') Construction
-				.input-field.col.s12.m6.l3
-					input#residential.filled-in(type='checkbox', name="residential")
-					label(for='residential') Residential
-			.row#fence_style
-				.col.s12
-					label(name="fence style", validate="fence style", class="legend") Fence Style
-				.input-field.col.s12.m6.l3
-					input#chain_link.filled-in(type='checkbox', name="chain link")
-					label(for='chain_link') Chain Link
-				.input-field.col.s12.m6.l3
-					input#wrought_iron.filled-in(type='checkbox', name="wrought iron")
-					label(for='wrought_iron') Wrought Iron
-				.input-field.col.s12.m6.l3
-					input#concrete_fence.filled-in(type='checkbox', name="concrete fence")
-					label(for='concrete_fence') Concrete Fence
-				.input-field.col.s12.m6.l3
-					input#wood.filled-in(type='checkbox', name="wood")
-					label(for='wood') Wood
-				.input-field.col.s12.m6.l3
-					input#security_barrier.filled-in(type='checkbox', name="security barrier")
-					label(for='security_barrier') Security Barrier
-			.clear
-			br
-			.row
-				.input-field.col.s12.m6.l6
-					input#height.filled-in(type='text', name="height")
-					label(for='residential') Height
-				.input-field.col.s12.m6.l6
-					input#lenght.filled-in(type='text', name="length")
-					label(for='lenght') Length (Approximate linear footage)
-			.row
-				.input-field.col.s12.m6.l6
-					input#num_gates.filled-in(type='text', name="number of gates")
-					label(for='num_gates') Number of Gates
-				.input-field.col.s12.m6.l3
-					input#swing.filled-in(type='checkbox', name="swing")
-					label(for='swing') Swing
-				.input-field.col.s12.m6.l3
-					input#slide.filled-in(type='checkbox', name="slide")
-					label(for='slide') Slide
+					.input-field.col.s12.m6.l4
+						input#new_fence.filled-in(type='checkbox', name="new fence to be installed")
+						label(for='new_fence') New fence to be installed
+					.input-field.col.s12.m6.l4
+						input#repair.filled-in(type='checkbox', name="repair")
+						label(for='repair') Repair
+			fieldset
+				legend Application
+				.row#application
+					.input-field.col.s12.m6.l3
+						input#industrial.filled-in(type='checkbox', name="industrial")
+						label(for='industrial') Industrial
+					.input-field.col.s12.m6.l3
+						input#commercial.filled-in(type='checkbox', name="commercial")
+						label(for='commercial') Commercial
+					.input-field.col.s12.m6.l3
+						input#construction.filled-in(type='checkbox', name="construction")
+						label(for='construction') Construction
+					.input-field.col.s12.m6.l3
+						input#residential.filled-in(type='checkbox', name="residential")
+						label(for='residential') Residential
+			fieldset
+				legend Fence Style
+				.row#fence_style
+					.input-field.col.s12.m6.l3
+						input#chain_link.filled-in(type='checkbox', name="chain link")
+						label(for='chain_link') Chain Link
+					.input-field.col.s12.m6.l3
+						input#wrought_iron.filled-in(type='checkbox', name="wrought iron")
+						label(for='wrought_iron') Wrought Iron
+					.input-field.col.s12.m6.l3
+						input#concrete_fence.filled-in(type='checkbox', name="concrete fence")
+						label(for='concrete_fence') Concrete Fence
+					.input-field.col.s12.m6.l3
+						input#wood.filled-in(type='checkbox', name="wood")
+						label(for='wood') Wood
+					.input-field.col.s12.m6.l3
+						input#security_barrier.filled-in(type='checkbox', name="security barrier")
+						label(for='security_barrier') Security Barrier
+				.clear
+				br
+				.row
+					.input-field.col.s12.m6.l3
+						input#height.filled-in(type='text', name="height")
+						label(for='residential') Height
+					.input-field.col.s12.m6.l5
+						input#lenght.filled-in(type='text', name="length")
+						label(for='lenght') Length (Approx. linear footage)
+					.input-field.col.s12.m6.l4
+						input#num_gates.filled-in(type='text', name="number of gates")
+						label(for='num_gates') No. of Gates
+			fieldset
+				legend Gate Operator
+				.row#gate_operator
+					.input-field.col.s12.m6.l4
+						input#swing.filled-in(type='checkbox', name="swing")
+						label(for='swing') Swing
+					.input-field.col.s12.m6.l4
+						input#slide.filled-in(type='checkbox', name="slide")
+						label(for='slide') Slide
 			.row
 				.input-field.col.m12
 					textarea#comments.materialize-textarea(name="comments")

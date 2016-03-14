@@ -164,6 +164,34 @@ form .legend
   color:#212121
 
 
+body.main form.quotation-form
+  padding:0px
+
+
+body.main form.quotation-form fieldset
+  padding-bottom:4em
+  margin:1.5em 0
+  border-color:#d9d9d9;
+
+body.main form.quotation-form fieldset:hover > legend
+  background-color:#17509f
+  transition:0.3s ease-in-out
+  -webkit-transition:0.3s ease-in-out
+  -moz-transition:0.3s ease-in-out
+  -o-transition:0.3s ease-in-out
+  -ms-transition:0.3s ease-in-out;
+
+
+body.main form.quotation-form fieldset legend
+  padding: 7px 10px
+  box-shadow:1px 1px 2px 0px #d9d9d9
+  background-color:#ccc
+  text-transform:uppercase
+  font-size:14px
+  color:#fff
+  margin-left: 15px
+
+
 .tabs-wrappers .row h5
   padding:15px 0px
   margin-bottom:0px
@@ -426,6 +454,17 @@ section.padding-tb
 
   .gn-menu-wrapper.gn-open-all .slogan
     display:block
+  .call .row .col
+    width:100% !important
+
+ .call .row ul
+    text-align:center
+
+  .call p.find-us
+    float:none
+    height:65px
+    margin:auto
+
 
 
 @media (max-width:600px)
@@ -434,6 +473,10 @@ section.padding-tb
   #contact .row #links ul li
     float:none !important
     width:100% !important
+
+  section#services::before
+    display:none
+
 
 @media (max-width:480px)
   #contact-info ul li
@@ -445,9 +488,23 @@ section.padding-tb
   header
     padding: 100px 0 100px 0
 
+@media (max-width:460px)
+  .call .row ul li.line
+    display:none
+
+  .call .row ul li
+    display:block
+    padding:5px 0px !important
+
+
+
 @media only screen and (min-width: 801px)
   body.main .navbar-fixed
     position: relative
 
   body.main
     margin-top: 0px
+
+@media (max-width:360px)
+  .gn-menu-main > li.logo
+    width:60%
