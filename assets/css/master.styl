@@ -1,10 +1,27 @@
 @import '_settings'
 
-normalize-css()
+
+
 base()
 
 body
   padding: 0px
+  font:16px/1.6 $open-sans
+  font-weight: 300
+  color:#212121
+
+body.main
+  margin-top:4em
+
+body.main .row
+  margin-bottom:0px
+
+.main .main-content .container
+  padding-bottom:60px
+  padding-top:40px
+
+.wow
+  visibility:hidden
 
 #wrapper
   text-align:center
@@ -16,7 +33,7 @@ body
   height:100%
   font-family:"Helvetica", Arial
   line-height:1.6
- 
+
 
 #wrapper .main_content
   position:relative
@@ -24,7 +41,7 @@ body
 
   @media (max-width:800px)
     padding:100px 25px
- 
+
 #wrapper .main_content p
   font-size:18px
 
@@ -50,4 +67,387 @@ body
     width:100%
     padding:0px
 
+br.clear
+  clear:both
 
+img
+  max-width:100%
+  height:auto
+
+nav.navbar.navbar-default
+  background-color:#fff
+  box-shadow:0px 0px 5px 0px #ccc
+
+#clients .row
+  margin-bottom:0px
+
+header
+  position:relative;
+  min-height:100%
+  display:block
+  padding: 123px 0 122px 0
+
+
+header .header-content
+  width:100%
+  text-align:center
+
+
+.header-content-inner h1
+  color:#fff
+  text-shadow:1px 1px 0px #222222
+
+.header-content-inner h6
+  line-height:1.4
+  color:#fff
+  text-shadow:1px 1px 0px #222222
+  font-size:24px
+  text-transform:capitalize
+  font-family:Open sans
+  font-weight:600
+
+body.main .gn-menu-main li.gn-trigger
+  display:none
+
+body.main .side-menu li
+  line-height:2.4
+
+body.main .side-menu
+  margin:0px
+  background-color:afblue
+
+
+body.main .side-menu li
+  border-bottom:1px solid #fff
+  line-height:1.6 !important
+
+body.main .side-menu li a
+  display:block
+  padding:10px 5px
+
+
+body.main .side-menu li a
+  color:#fff
+  font-size:14px
+  padding-left:20px
+
+body.main .side-menu li:hover a,
+body.main .side-menu li.active a
+  background-color:afred
+
+ul.bulleted li::before
+  font-family:FontAwesome
+  content: "\f101"
+  margin-left:15px
+  margin-right:5px
+  color:afred
+
+.auto.fa::before
+  width:auto
+
+form label sup
+  color:afred
+
+form .label_name
+  border-bottom:1px solid #eee
+  padding-bottom:10px
+  font-size:1.4rem
+  display:block
+  color:#222
+
+form .legend
+  font-size:16px
+  display:block
+  clear:both !important
+  margin:2em auto 0em auto
+  border-bottom:1px solid #eee
+  color:#212121
+
+
+.tabs-wrappers .row h5
+  padding:15px 0px
+  margin-bottom:0px
+  font-family:Lato
+  width:100%
+  background-color:#244287
+  color:#fff
+  border-bottom:1px solid #fff
+
+
+ul#customers-logo li
+  float:left
+  width:auto
+  margin:3px
+
+
+.company-slogan li h6
+  margin-bottom:0px
+  line-height:4
+  color:afblue
+
+
+.gn-menu-wrapper.gn-open-all ul li a:hover
+  background-color:afblue
+  color:#fff
+
+
+.main-container
+  background-color:#fff
+
+
+section.call
+  background-color:#f0f2f2
+  box-shadow:0px 2px 3px 0px #E6E6E6
+  -webkit-box-shadow:0px 2px 3px 0px #E6E6E6
+  -moz-box-shadow:0px 2px 3px 0px #E6E6E6
+  -o-box-shadow:0px 2px 3px 0px #E6E6E6
+
+.call .row ul
+  margin: 7px 0px
+
+.call .row ul li
+
+  display:inline-block
+  padding:15px 0px !important
+  vertical-align:middle
+
+.call .row ul li.line
+  border-left:1px solid #dee0e0
+  margin-left:5px
+  margin-right:5px
+
+
+.call .row ul li h6
+  margin-bottom:0px
+  font-weight:400 !important
+  font-size:18px
+  font-family:Lato
+
+.call .row ul li h6 small.toronto
+  color: afblue
+
+.call .row ul li h6 small.west
+  color: afred
+
+.call p.find-us
+  background:url(../img/ariba.jpg) no-repeat left center
+  background-color:afblue
+  margin-bottom:0px
+  line-height:4
+  width:240px
+  float:right
+
+
+.call p.find-us a
+  width:155px
+  text-align:center
+  margin-bottom:0px
+  display:block
+  color:#fff
+  float:right
+
+section#services
+  background: #f7f7f7
+  position:relative
+  z-index:1
+
+section#services::before
+  content: ""
+  background-image:url(../img/servicesbg.png)
+  background-position:right top
+  background-repeat:no-repeat
+  z-index:-1
+  position:absolute
+  top:0px
+  height:100%
+  width:100%
+  opacity:0.4
+
+
+#services .row.list-services .col h5
+  font-size:1.4rem
+  font-weight:300
+  text-transform:capitalize
+  margin-top:10px
+
+#services .row.list-services img
+  filter: grayscale(100%)
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  opacity:0.4
+  -webkit-opacity:0.4
+  -moz-opacity:0.4
+  transition:0.3s ease-in-out
+  -webkit-transition:0.3s ease-in-out
+  -moz-transition:0.3s ease-in-out
+
+#services .row.list-services a
+  color:#b1b1b1
+  display:block
+
+#services .row.list-services .col:hover img,
+#services .row.list-services .col:hover a
+  filter: grayscale(0%)
+  -webkit-filter: grayscale(0%)
+  -moz-filter: grayscale(0%)
+  opacity:1
+  -webkit-opacity:1
+  -moz-opacity:1
+  color:#17509f
+
+#contact .row #links ul li
+  float:left
+  width:50%
+
+#contact
+  background-color: #26468e
+  color:#fff
+  padding-bottom:40px
+  padding-top:50px
+
+#contact h5
+  font-weight:300
+
+
+#contact #links ul li a
+  color:#fff
+
+#contact #contact-info p strong
+  font-size:16px
+  font-weight:600
+
+#contact #contact-info p
+  margin-bottom:0px
+  color:#fff
+
+#contact-info ul li
+  float:left
+
+#contact-info ul li.border
+  padding:0 5px
+
+#contact-info ul li a
+  color:#fff
+
+#contact-info ul
+  float:left
+  margin-top:0px
+
+
+section#copyright
+  background-color:#244287
+
+section#copyright .container
+  padding:17px 15px
+
+section#copyright p
+  margin-bottom:0px
+  font-size:14px
+  color:#fff
+
+section#copyright p a
+  color:#fff
+
+section.padding-tb
+  padding:60px 0px
+
+.slogan
+  padding:10px
+  width: 95%
+  color:#17509f
+  display:none
+
+.slogan .mobile-slogan
+  text-align:center
+  margin-bottom:0px
+
+.contact-page h5
+  color:afblue
+
+.contact-page ul li
+  float:none
+  display:block
+  font-family: $open-sans
+  line-height:2
+
+.contact-page ul li.fa::before
+  width:20px
+  margin-right:5px
+
+
+
+
+@media (max-width:767px)
+  h1
+    font-size:3rem
+  h2
+    font-size:2.52rem
+  h3
+    font-size:2.32rem
+  h4
+    font-size:2rem
+
+  .header-content-inner h6
+    font-size:18px
+    margin-bottom:0px
+
+  .cbp-bicontrols
+    margin-top:-100px
+
+@media (max-width:800px)
+  .company-slogan li h6
+     font-size:14px
+     line-height:1.6 !important
+     margin-top:8px
+
+  .gn-menu-main > li:last-child
+     text-align:right
+     width:45%
+     float:right
+  #contact .row .col
+    width:100%
+  #contact .row div
+    margin-bottom:2em
+
+  body.main .gn-menu-main li.gn-trigger
+    display:block
+  body.main .side-menu
+    display:none
+
+  body.main .primary
+    width:100% !important
+
+  .tabs-wrappers .row h5
+    display:none
+
+@media (max-width:640px)
+  .company-slogan
+    display:none
+
+  .gn-menu-wrapper.gn-open-all .slogan
+    display:block
+
+
+@media (max-width:600px)
+
+
+  #contact .row #links ul li
+    float:none !important
+    width:100% !important
+
+@media (max-width:480px)
+  #contact-info ul li
+    float:none
+
+  #contact-info ul li.border
+    display:none
+
+  header
+    padding: 100px 0 100px 0
+
+@media only screen and (min-width: 801px)
+  body.main .navbar-fixed
+    position: relative
+
+  body.main
+    margin-top: 0px

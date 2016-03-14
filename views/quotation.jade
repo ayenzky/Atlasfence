@@ -1,0 +1,112 @@
+extends sub-layout
+
+block content
+	h3.title-header Quotation
+	p You can  <a href="../img/pdf/form.pdf" target="_blank"><i class="auto fa fa-cloud-download"></i> Download the Form.</a>
+	.row
+		form.col.s12(name="quotation", netlify,  netlify-honeypot="bot-field")
+			label(name="contact information" , class="label_name") Contact Information
+			.row
+				.input-field.col.s12
+					input#company_name.validate(type='text', name="company name", required)
+					label(for='company_name') Company Name <sup>*</sup>
+			.row
+				.input-field.col.s12.m6
+					input#first_name.validate(type='text', name="first name", required)
+					label(for='first_name') First Name <sup>*</sup>
+				.input-field.col.s12.m6
+					input#last_name.validate(type='text', name="last name", required)
+					label(for='last_name') Last Name <sup>*</sup>
+			.row
+				.input-field.col.s12.m6
+					input#city.validate(type='text', name="city", required)
+					label(for='city') City <sup>*</sup>
+				.input-field.col.s12.m6
+					input#site_adress.validate(type='text', name="site address")
+					label(for='site_adress') Site Address
+			.row
+				.input-field.col.s12.m6
+					input#phone_number.validate(type='tel', name="phone number", required)
+					label(for='phone_number') Phone Number <sup>*</sup>
+				.input-field.col.s12.m6
+					input#fax_number.validate(type='tel', name="fax_number")
+					label(for='fax_number') Fax Number
+			.row
+				.input-field.col.s12
+					input#email.validate(type='email', name="email")
+					label(for='email') Email
+			br
+			label(name="please check your needs" , class="label_name") Please Check Your Needs
+			.row#situation
+				.col.s12
+					label(name="situation", class="legend") Situation
+				.input-field.col.s12.m6
+					input#new_fence.filled-in(type='checkbox', name="new fence to be installed")
+					label(for='new_fence') New fence to be installed
+				.input-field.col.s12.m6
+					input#repair.filled-in(type='checkbox', name="repair")
+					label(for='repair') Repair
+			.row#application
+				.col.s12
+					label(name="situation", class="legend",) Application
+
+				.input-field.col.s12.m6.l3
+					input#industrial.filled-in(type='checkbox', name="industrial")
+					label(for='industrial') Industrial
+				.input-field.col.s12.m6.l3
+					input#commercial.filled-in(type='checkbox', name="commercial")
+					label(for='commercial') Commercial
+				.input-field.col.s12.m6.l3
+					input#construction.filled-in(type='checkbox', name="construction")
+					label(for='construction') Construction
+				.input-field.col.s12.m6.l3
+					input#residential.filled-in(type='checkbox', name="residential")
+					label(for='residential') Residential
+			.row#fence_style
+				.col.s12
+					label(name="situation", class="legend") Fence Style
+				.input-field.col.s12.m6.l3
+					input#chain_link.filled-in(type='checkbox', name="chain link")
+					label(for='chain_link') Chain Link
+				.input-field.col.s12.m6.l3
+					input#wrought_iron.filled-in(type='checkbox', name="wrought iron")
+					label(for='wrought_iron') Wrought Iron
+				.input-field.col.s12.m6.l3
+					input#concrete_fence.filled-in(type='checkbox', name="concrete fence")
+					label(for='concrete_fence') Concrete Fence
+				.input-field.col.s12.m6.l3
+					input#wood.filled-in(type='checkbox', name="wood")
+					label(for='wood') Wood
+				.input-field.col.s12.m6.l3
+					input#security_barrier.filled-in(type='checkbox', name="security barrier")
+					label(for='security_barrier') Security Barrier
+			.clear
+			br
+			.row
+				.input-field.col.s12.m6.l6
+					input#height.filled-in(type='text', name="height")
+					label(for='residential') Height
+				.input-field.col.s12.m6.l6
+					input#lenght.filled-in(type='text', name="length")
+					label(for='lenght') Length (Approximate linear footage)
+			.row
+				.input-field.col.s12.m6.l6
+					input#num_gates.filled-in(type='text', name="number of gates")
+					label(for='num_gates') Number of Gates
+				.input-field.col.s12.m6.l3
+					input#swing.filled-in(type='checkbox', name="swing")
+					label(for='swing') Swing
+				.input-field.col.s12.m6.l3
+					input#slide.filled-in(type='checkbox', name="slide")
+					label(for='slide') Slide
+			.row
+				.input-field.col.m12
+					textarea#comments.materialize-textarea(name="comments")
+					label(for='comments') Please write your comments
+			.row
+				.input-field.col.m12
+					button(type="submit", name="submit", value="submit", class="btn-large waves-effect materialize-red") Submit
+
+
+
+

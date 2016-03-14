@@ -1,12 +1,88 @@
 extends layout
 
 block content
-  div#wrapper
-    div.main_content
-      div.uppersection
-        div.logo
-          img(src="../img/logo.png")
-        h2
-          strong Coming Soon <br>
-        p Atlas Fence began its existence as a fence contractor in 1976 with the vision of becoming the leading fence specialist in Toronto and southwestern Ontario.
-    
+		.main
+			header
+				.header-content.wow.fadeInDown
+					.header-content-inner
+						h1 Our Expertise
+						h6 We expertise in commercial, industrial, construction,<br> highway and high security applications.
+						br
+						p
+							a.btn-large.waves-effect.waves-red.materialize-red(href='#services') Learn More
+
+			ul#cbp-bislideshow.cbp-bislideshow
+				li
+					img(src='../img/slide1.jpg', alt='image01')
+				li
+					img(src='../img/slide2.jpg', alt='image02')
+
+
+			#cbp-bicontrols.cbp-bicontrols
+				span.cbp-biprev
+				span.cbp-bipause
+				span.cbp-binext
+
+		.main-container
+			section.call
+				.container
+					.row
+						.col.l8
+							ul
+								li
+									<h6><small class="toronto">TORONTO</small>: 416-489-9612</h6>
+								li.line
+								li
+									<h6><small class="west">WEST</small>: 905-272-8448</h6>
+						.col.l3
+							p.find-us
+								a(href="//discovery.ariba.com/profile/AN01012896781", target="_blank") FIND US NOW
+
+			section#about-us.padding-tb.wow.fadeInUp
+				.container
+					.row
+						.col.l12
+							h1.center About Us
+							p.center
+								| Atlas Fence began its existence as a fence contractor in 1976 with the vision of becoming the leading fence specialist in Toronto and southwestern Ontario. Over the years we have stayed true to the course and built a business that prides itself on commitment to expertise, quality and customer service. We specialize in providing quality fencing and barrier solutions for commercial, industrial  and residential applications. Our product offering includes chain link and highway barrier solutions.  As a result of our focus and commitment, we have been rewarded with a loyal client roster that includes municipalities, insurance companies, property management firms and the most successful construction companies in North America.
+							p.center
+								a.btn-large.waves-effect.waves-teal.materialize-blue(href="#") READ MORE
+
+			section#services.padding-tb
+				.container
+					.row.wow.fadeIn
+						.col.l12
+							h1.center Services
+							p.center We are passionate about the installation process and continue to refine our methods and process.
+					.row.list-services
+						br
+						.col.s12.m6.l3.center.wow.fadeInLeft.delay-02s
+							a(href="/high-security-solutions")
+								img(src="../img/security.png")
+								br
+								h5.center Highly Security <br>Solutions
+						.col.s12.m6.l3.center.wow.fadeInLeft.delay-05s
+							a(href="/industrial-and-commercial-chain-link")
+								img(src="../img/chainlink.png")
+								br
+								h5 Industrial & Commerial <br>Chain Link
+						.col.s12.m6.l3.center.wow.fadeInRight.delay-07s
+							a(href="/highway fencing")
+								img(src="../img/highwayfencing.png")
+								br
+								h5 Highway <br>Fencing
+						.col.s12.m6.l3.center.wow.fadeInRight.delay-09s
+							a(href="/wrought-iron-fencing")
+								img(src="../img/roughfencing.png")
+								br
+								h5 Wrought Iron <br>Fencing
+
+			section#clients
+				.container
+					.row
+						.col.s12.m3.l3.wow.zoomIn
+							img(src="../img/logo1.jpg")
+						.col.s12.m3.l3.wow.zoomIn
+							img(src="../img/logo2.jpg")
+						.col.s12.m6.l6.wow.zoomIn
+							img(src="../img/logo3.jpg")

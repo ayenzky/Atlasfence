@@ -1,0 +1,17 @@
+include _include/header
+
+body.main
+  include _include/header-top
+
+  .main-content
+    .container
+      .row
+        .sidebar.col.s12.m4.l3.wow.slideInLeft
+          .tabs-wrappers
+            include sidebar
+
+        .primary.col.s12.m8.l9.right.wow.fadeInUp
+          block content
+
+
+  include _include/footer

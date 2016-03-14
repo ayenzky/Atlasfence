@@ -1,22 +1,8 @@
-doctype html
-html
+include _include/header
 
-  head
-    meta(charset='utf8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-    meta(name='description', content='This site is still under construction')
-    meta(name='author', content= "Atlasfence")
-    link(rel="apple-touch-icon", href="../img/af-touch-icon-iphone.jpg")
-    link(rel="apple-touch-icon", sizes="76x76", href="../img/af-touch-icon-ipad.jpg")
-    link(rel="apple-touch-icon", sizes="120x120", href="../img/af-touch-icon-iphone-retina.jpg")
-    link(rel="apple-touch-icon", sizes="152x152", href="../img/af-touch-icon-ipad-retina.jpg")
-    link(rel="shortcut icon" href="../img/favicon.ico")
-    //- uncomment if your site is responsive!
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    title="Coming Soon"
-    != css()
+body
+	include _include/header-top
 
-  body
-    block content
+	block content
 
-    != js()
+	include _include/footer
