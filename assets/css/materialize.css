@@ -8065,7 +8065,8 @@ small {
 
 .btn, .btn-large, .btn-flat {
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
   display: inline-block;
   height: 36px;
   line-height: 36px;
