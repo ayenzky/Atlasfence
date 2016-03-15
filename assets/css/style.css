@@ -1199,7 +1199,7 @@ body.lb-disable-scrolling {
   bottom: -1px;
   left: 0;
   right: -1px;
-  background-color: rgba(85, 172, 238, 0.9);
+  background-color: rgba(23, 80, 159, 0.3);
   cursor: pointer;
   overflow: hidden;
   opacity: 0;
